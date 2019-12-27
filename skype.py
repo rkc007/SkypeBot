@@ -20,8 +20,8 @@ driver.get('https://web.skype.com/en')
 driver.set_window_size(1024, 768)
 print("Loaded Skype!")
 
-userName = 'ytexpert'    # change it!
-password = 'fucking<3' # change it!
+userName = 'username'    # change it!
+password = 'password' # change it!
 
 # def signIn(userName, password):
 print("Signing in...")
