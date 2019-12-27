@@ -30,12 +30,12 @@ def signIn():
   print("Entered Skype!")
   userNameField = driver.find_element_by_id("username")
   userNameField.clear()
-  userNameField.send_keys('a4yush1')
+  userNameField.send_keys('usermame')
   driver.find_element_by_xpath('//*[@id="signIn"]').click()
   time.sleep(2)
   passwordField = driver.find_element_by_id("i0118")
   passwordField.clear()
-  passwordField.send_keys('Apr2indore')
+  passwordField.send_keys('password')
   # //*[@id="CredentialsInputPane"]/div[2]/div/div/div[5]/div/div/div[2]
   # //*[@id="swxContent1"]/swx-navigation/div/div/div/div[2]/div[1]/div/ul/div[2]
   driver.find_element_by_xpath('//*[@id="CredentialsInputPane"]/div[2]/div/div/div[5]/div/div/div[2]').click()
@@ -105,6 +105,6 @@ def main(args):
 if __name__ == "__main__":
   print("Starting up...")
   parser = argparse.ArgumentParser(description='pySkypeBot: Python Skype Bot')
-  parser.add_argument('-ytexpert', '--username', help='Skype User Name')
-  parser.add_argument('-fucking<3', '--password', help='Skype Password')
+  parser.add_argument('-', '--username', help='Skype User Name')
+  parser.add_argument('-', '--password', help='Skype Password')
   main(parser.parse_args())
